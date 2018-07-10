@@ -28,24 +28,21 @@
     "type": "git",
     "url": "git+https://github.com/geocolon/messageApp-websocket.git"
   },
-  "author": "geocolon@gmail.com",
-  "license": "BSD-3-Clause",
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "uws": "^10.148.1"
   },
-  "bugs": {
-    "url": "https://github.com/geocolon/messageApp-websocket/issues"
-  },
-  "homepage": "https://github.com/geocolon/messageApp-websocket#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^4.9.0",
-    "nodemon": "^1.12.1"
-  }
+    "nodemon": "^1.18.0"
+  },
+  "author": "geocolon@gmail.com",
+  "license": "BSD-3-Clause"
 }

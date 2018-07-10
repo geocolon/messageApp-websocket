@@ -3,6 +3,9 @@ import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import bodyParser from 'body-parser';
+import {version} from '../package.json';
+console.log('Server ONLINE...');
+
 
 const PORT = 3000;
 const app = express();
@@ -19,7 +22,12 @@ app.use(cors({
 app.use(bodyParser.json({
     limit: '50mb'
 }));
-app.set('root', __dirname);
+
+app.use((req, res) => {
+    res.json({
+        version: version
+    })
+});
 
 app.server.listen(process.env.PORT || PORT, () => {
         console.log(`App is running on port ${app.server.address().port}`);
